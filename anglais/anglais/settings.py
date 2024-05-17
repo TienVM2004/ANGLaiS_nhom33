@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-1*qg9$1ml&&+abp!se7!32_+p!57_6u7z^c0ik-%2nd%yb3ww5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['anglais.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -88,13 +88,14 @@ WSGI_APPLICATION = 'anglais.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'anglais_main',
-        'USER': 'root',
-        'PASSWORD' : '17012004', 
-        'HOST': '127.0.0.1',
+        'NAME': 'freedb_anglais',
+        'USER': 'freedb_vuminhtien2004',
+        'PASSWORD' : 'GK5!NU&wSX9eGv4', 
+        'HOST': 'sql.freedb.tech',
         'PORT': '3306',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -131,9 +132,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
+
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
