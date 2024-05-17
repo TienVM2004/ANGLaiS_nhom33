@@ -96,6 +96,8 @@ DATABASES = {
     }
 }
 
+CSRF_TRUSTED_ORIGINS = ['https://anglais-nhom33.onrender.com']
+CORS_ORIGIN_WHITELIST = ['https://anglais-nhom33.onrender.com']
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
