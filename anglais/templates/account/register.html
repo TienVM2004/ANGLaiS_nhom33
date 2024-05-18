@@ -39,14 +39,14 @@
         {% csrf_token %}
         <div class="user-details">
           <div class="input-box">
-            <span class="details">User Name</span>
+            <span class="details">Username</span>
             
             <input type="text" placeholder="Enter your username" id="{{ userform.username.id_for_label }}" name="{{ userform.username.name }}" value="{{ userform.username.value|default_if_none:'' }}" required/> 
           </div>
           <div class="input-box">
-            <span class="details">First name</span>
+            <span class="details">Full name</span>
            
-            <input type="text" placeholder="Enter your username" id="{{ userform.first_name.id_for_label }}" name="{{ userform.first_name.name }}" value="{{ userform.first_name.value|default_if_none:'' }}" required/> 
+            <input type="text" placeholder="Enter your full name" id="{{ userform.first_name.id_for_label }}" name="{{ userform.first_name.name }}" value="{{ userform.first_name.value|default_if_none:'' }}" required/> 
           </div>
           <div class="input-box">
             <span class="details">Email</span>

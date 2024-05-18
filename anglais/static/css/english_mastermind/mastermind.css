@@ -62,7 +62,7 @@ body, html {
 }
 .voice-button {
   margin-bottom: 10px;
-  margin-left: 45%;
+  margin-left: 47%;
   font-size: 25px;
   background-color: white; /* Màu nền của nút */
   border: none; /* Không có viền */
@@ -71,7 +71,7 @@ body, html {
 .voice-button-prompt
 {
   margin-bottom: 10px;
-  margin-left: 45%;
+  margin-left: 47%;
   font-size: 25px;
   background-color: white; /* Màu nền của nút */
   border: none; /* Không có viền */
@@ -88,6 +88,7 @@ body, html {
   background-color: #f8f5f5;
   border-radius: 0px 0px 5px 5px;
   padding: 10px 10px;
+  text-align: center;
 }
 
 .message-block {
@@ -111,6 +112,7 @@ body, html {
   margin-top: 15px; /* Khoảng cách phía trên */
   border-radius: 0px 0px 10px 10px;
   border: 2px solid #6fa9ff;
+  text-align: center;
 }
 .prompt-container {
   margin-top: 20px;
@@ -122,15 +124,15 @@ body, html {
 
 .received {
   align-self: flex-start;
-  margin-left: 300px;
-  margin-right: 300px;
+  /* margin-left: 300px; */
+  /* margin-right: 300px; */
 }
 
 .next-button
 {
 
-    margin-top: 200px;
-    margin-left: 40%;
+    /* margin-top: 200px; */
+    /* margin-left: 40%; */
     font:normal normal 300 1.3em 'Open Sans';
     text-decoration:none; 
     
@@ -158,4 +160,10 @@ background-color .8s ease;
   padding: 5px 10px;
   border: none;
   cursor: pointer;
+}
+
+li.next-clause {
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
